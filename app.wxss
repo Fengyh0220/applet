@@ -1,0 +1,12 @@
+/**app.wxss**/
+page{
+  background: #f0f0f0;
+}
+.clear{
+  display: table;
+}
+.clear::after{
+  content: "";
+  display: block;
+  clear:both;
+}

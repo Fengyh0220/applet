@@ -1,0 +1,124 @@
+/**index.wxss**/
+@import "../../common/css/list.wxss";
+page{
+  height: 100%;
+}
+.scroll-page{
+  height: 100%;
+}
+.popup{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(0,0,0,0.8);
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 9999;
+  
+}
+.isRuleShow{
+  display: block;
+}
+.isRuleHide{
+display: none;
+}
+.popup-city{
+  width: 600rpx;
+  background: #fff;
+  position: absolute;
+  top: 30%;
+	left: 0;
+	right: 0;
+  border-radius: 20rpx;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40rpx;
+}
+.popup-city view{
+  text-align: center;
+  color: #43d7ff;
+}
+.popup-city text{
+  width: 100rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  color: #333;
+  display: inline-block;
+  border-radius: 10rpx;
+  font-size: 26rpx;
+}
+.choose{
+  width: 100rpx;
+  height: 40rpx;
+  color: #fff !important;
+  background: #43d7ff;
+}
+.header{
+  height: 92rpx;
+  background: #181818;
+}
+.city{
+  float: left;
+  width: 142rpx;
+  text-align: center;
+  line-height: 92rpx;
+  font-size: 29rpx;
+  color: #d3b9a8;
+}
+.city::after{
+  content: "";
+  display: inline-block;
+  position: relative;
+  top: 2rpx;
+  vertical-align: middle;
+  height: 0;
+  margin-left: 5rpx;
+  border-width:10rpx 10rpx 0;
+  border-style:solid;
+  border-color:#d3b9a8 transparent transparent;
+}
+.userinfo{
+  float: right;
+  width: 48rpx;
+  height: 48rpx;
+  margin: 20rpx;
+}
+.userinfo image{
+  width: 100%;
+  height: 100%;
+}
+.nav-list{
+ display: flex;
+ height: 200rpx;
+ background: #fff;
+}
+.nav-list navigator{
+ margin: auto;
+ flex: 1;
+ text-align: center;
+}
+.nav-list navigator:checked{
+  background: #fff;
+}
+.nav-list image{
+width: 98rpx;
+height: 93rpx;
+}
+.nav-list text{
+  display: block;
+  line-height: 50rpx;
+  font-size: 26rpx;
+}
+.hot{
+  margin-top: 20rpx;
+  
+}
+.hot-title{
+  font: 30rpx/80rpx "宋体";
+  padding-left: 30rpx;
+  color: #ccc;
+  background: #fff;
+}

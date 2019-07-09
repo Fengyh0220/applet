@@ -1,0 +1,2 @@
+/* pages/food/food.wxss */
+@import "../../common/css/list.wxss";

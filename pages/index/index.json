@@ -1,0 +1,21 @@
+{
+  "errCode": 0,
+  "success": true,
+  "errMsg": "OK",
+  "description": "",
+  "data": [{
+    "listImg":"/common/img/icon_img1.jpg",
+    "titleName":"简餐",
+    "listDistance":"200m",
+    "discount":"299",
+    "originalPrice":"399",
+    "sales":"销量：222"
+  },{
+    "listImg": "/common/img/icon_img2.jpg",
+    "titleName": "简餐2",
+    "listDistance": "200m",
+    "discount": "299",
+    "originalPrice": "399",
+    "sales": "销量：222"
+  }]
+}

@@ -1,0 +1,60 @@
+.list-item{
+  width: 100%;
+  height: 218rpx;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e1e1e1;
+  padding:15rpx 20rpx;
+  margin-bottom: 30rpx;
+  display: block;
+  background: #fff;
+}
+.list-item image{
+  width: 188rpx;
+  height: 188rpx;
+  float: left;
+  
+}
+.list-info{
+  width: 480rpx;
+  float: right;
+}
+.title-name{
+  width: 400rpx;
+  float: left;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+.list-distance{
+ float: right;
+ font-size: 28rpx;
+ color: #ccc;
+}
+.list-position{
+  width: 480rpx;
+  font-size: 28rpx;
+  color: #ccc;
+  display: block;
+  margin-top: 20rpx;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+.list-price{
+  margin-top: 30rpx;
+}
+.price{
+  color: #D9534F;
+  float: left;
+}
+.original-price{
+  text-decoration: line-through;
+  font-size: 28rpx;
+  color: #ccc;
+}
+.sales{
+  float: right;
+  color: #ccc;
+  font-size: 28rpx;
+  margin-top: 10rpx;
+}

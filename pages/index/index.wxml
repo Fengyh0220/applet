@@ -1,0 +1,72 @@
+
+<scroll-view class='scroll-page' scroll-y>
+  <view class='popup {{popupTrue?"isRuleShow":"isRuleHide"}}' >
+   <view class='popup-city'>
+     <view>请选择城市</view>
+     <text class="{{state==index?'choose':''}}" bindtap="select_date" wx:for="{{citysList}}"  wx:key="item" data-code='{{item.cityCode}}' data-key='{{index}}' data-text='{{item.cityName}}'>{{item.cityName}}</text>
+   </view>
+  </view>
+  <view class='header'>
+    <view class='city' bindtap='clickCity'>{{cityCode}}</view>
+    <navigator class='userinfo' hover-class='none'>
+      <image src='/common/img/user.jpg'></image>
+    </navigator>
+  </view>
+  <view class='nav-list'>
+    <navigator url='../food/food' hover-class='none'> 
+     <image src='/common/img/nav_img (1).jpg'></image>
+     <text>美食</text>
+    </navigator>
+    <navigator hover-class='none'>
+     <image src='/common/img/nav_img (2).jpg'></image>
+     <text>美团外卖</text>
+    </navigator>
+    <navigator hover-class='none'>
+     <image src='/common/img/nav_img (3).jpg'></image>
+     <text>休闲娱乐</text>
+    </navigator>
+    <navigator hover-class='none'>
+     <image src='/common/img/nav_img (4).jpg'></image>
+     <text>酒店</text>
+    </navigator>
+    <navigator hover-class='none'>
+     <image src='/common/img/nav_img (5).jpg'></image>
+     <text>电影/演出</text>
+    </navigator>
+  </view>
+  <view class='hot'>
+     <view class='hot-title'>猜你喜欢</view>
+     <view class='list'>
+        <view class='list-item' wx:for="{{dataList}}"  wx:key="item">
+          <image src='{{item.listImg}}' class='list-image'></image>
+          <view class='list-info'>
+            <view class='list-title'>
+              <text class='title-name'>{{item.titleName}}</text>
+              <text class='list-distance'> {{item.listDistance}}</text>
+              <view style='clear:both'></view>
+            </view>
+            <view class='clear'>
+               <!-- <view class='list-score'>
+                <view class='score'></view>
+               </view> -->
+               <view class='list-position'>
+                 {{item.listPosition}}
+               </view>
+            </view>
+            <view class='list-price'>
+              <view class='price'>
+                <text>{{item.discount}}</text>
+                <text class='original-price'>{{item.originalPrice}}</text>
+                <view style='clear:both'></view>
+              </view>
+              <view class='sales'>
+                {{item.sales}}
+              </view>
+              <view style='clear:both'></view>
+            </view>
+          </view>
+        </view>
+     </view>
+  </view>
+</scroll-view>
+ 
